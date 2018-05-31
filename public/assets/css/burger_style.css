@@ -5,3 +5,7 @@ li {
 html {
     background-color: #FEF2E6;
 }
+
+.change-devoured {
+    margin-left: 20px !important;
+}

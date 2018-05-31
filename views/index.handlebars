@@ -11,7 +11,7 @@
         <div class="col s6">
             <div class="card">
                 <div class="card-content">
-                    <span class="card-title">Burgers To Devour!</span>
+                    <span class="card-title center-align">Burgers To Devour!</span>
                     <hr>
                     <ol>
                         {{#each burgers}} {{#unless devoured}} {{> burgers/burger-block devoured=true}} {{/unless}} {{/each}}
@@ -22,7 +22,7 @@
         <div class="col s6">
             <div class="card">
                 <div class="card-content">
-                    <span class="card-title">Burgers Already Devoured!</span>
+                    <span class="card-title center-align">Burgers Already Devoured!</span>
                     <hr>
                     <ol>
                         {{#each burgers}} {{#if devoured}} {{> burgers/burger-block devoured=false}} {{/if}} {{/each}}
@@ -33,7 +33,7 @@
     </div>
 </div>
 
-<div class="row">
+<div class="row center-align">
     <div class="col s3">
     <img class="materialboxed center" width="250" src="assets/img/burger.gif">
     </div>  
@@ -41,7 +41,7 @@
         <div class="card-content">
             <span class="card-title">Add A New Burger!</span>
             <hr>
-            <div class="input-field col s6 offset-3">
+            <div class="input-field col s12">
                 <input id="bg" type="text" class="validate">
                 <label for="bg">Add your own Burger to devour here</label>
                 <button class="btn waves-effect waves-light" type="submit" name="action">ADD BURGER!
